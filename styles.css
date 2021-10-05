@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --radius: 20px;
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
+  background-image: url("./assets/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 337.5px;
+  border-radius: var(--radius);
+  padding-bottom: 2rem;
+}
+
+.card__hero-image {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  width: 100%;
+  height: auto;
+}
+
+.card__content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.card__title {
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.card__description {
+  color: var(--desaturated-blue);
+  text-align: center;
+}
+
+.plan-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+  background-color: var(--very-pale-blue);
+  border-radius: calc(var(--radius) / 2);
+}
+
+.plan-selector__image {
+  height: 3rem;
+}
+
+.plan-selector__title {
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin: 0;
+  margin-block-end: 0.2rem;
+}
+
+.plan-selector__price {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--desaturated-blue);
+}
+
+.plan-selector__link {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.plan-selector__plan-container {
+  margin-right: 2rem;
+}
+
+.card__payment {
+  text-decoration: none;
+}
+
+.card__payment-link {
+  display: grid;
+  place-items: center;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  background-color: var(--bright-blue);
+  color: var(--pale-blue);
+  height: 3rem;
+  border-radius: calc(var(--radius) / 2);
+  box-shadow: 8px 7px 30px -5px var(--desaturated-blue);
+  font-weight: 900;
+}
+
+.card__cancel {
+  text-decoration: none;
+}
+
+.card__cancel-link {
+  display: grid;
+  place-items: center;
+  margin-block-start: 2rem;
+  font-weight: 900;
+  color: var(--desaturated-blue);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-image: url("./assets/pattern-background-desktop.svg");
+  }
+}
