@@ -6,8 +6,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ![Mobile Screenshot](./media/mobile.png)
 
-- Solution URL: [https://github.com/arthurvmdantas/order-sumary](https://github.com/arthurvmdantas/order-sumary)
-- Live Site URL: [https://arthurvmdantas.github.io/tip-calculator](https://arthurvmdantas.github.io/order-sumary)
+- Solution URL: [https://github.com/arthurvmdantas/order-sumary](https://github.com/arthurvmdantas/order-summary)
+- Live Site URL: [https://arthurvmdantas.github.io/tip-calculator](https://arthurvmdantas.github.io/order-summary)
 
 ## My process ⚙️
 
